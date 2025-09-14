@@ -1,0 +1,18 @@
+<!-- url-short-icon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">URL Shortener</title>
+  <!-- black rounded background -->
+  <rect x="0" y="0" width="64" height="64" rx="10" ry="10" fill="#000"></rect>
+
+  <!-- chain / link icon (left) -->
+  <g transform="translate(10,14) scale(0.9)" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M6 20c-3.3 0-6-2.7-6-6s2.7-6 6-6h8"></path>
+    <path d="M26 4c3.3 0 6 2.7 6 6s-2.7 6-6 6h-8"></path>
+    <path d="M12 12l8 0"></path>
+  </g>
+
+  <!-- 'url' text on the right -->
+  <text x="34" y="38" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff" letter-spacing="0.5">
+    url
+  </text>
+</svg>
