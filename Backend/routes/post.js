@@ -35,7 +35,7 @@ routerPost.post("/shorten", async (req, res) => {
     res.status(201).json({ shortUrl: `${shortCode}` });
   } catch (err) {
     console.log(err);
-    res.status(500).json({ error: "server side error" });
+    res.status(500).json({ error: err.message });
   }
   // const shortCode=generateShortCode();
 });
