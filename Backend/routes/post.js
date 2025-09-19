@@ -16,7 +16,7 @@ routerPost.post("/shorten", async (req, res) => {
   try {
     const db=await initDB();
     const { originalURL } = req.body;
-    // console.log(originalURL);
+    console.log(originalURL);
     const [rows] = await db.execute(
       "SELECT short_code from urls where original_url = ?",
       [originalURL]
@@ -35,7 +35,7 @@ routerPost.post("/shorten", async (req, res) => {
     res.status(201).json({ shortUrl: `${shortCode}` });
   } catch (err) {
     console.log(err);
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: "server side error" });
   }
   // const shortCode=generateShortCode();
 });
