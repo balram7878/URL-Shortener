@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-  @apply bg-[url("./assets/image3.jpg")];
+  @apply bg-[url("./assets/image4.jpg")];
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -30,7 +30,7 @@ export default function Main() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="h-[30rem] w-[40rem] text-white rounded-2xl flex justify-evenly items-center flex-col  bg-neutral-900/90 backdrop-blur-sm border-2 shadow-xl border-white/10">
+        <div className="h-[30rem] w-[40rem] text-white rounded-2xl flex justify-evenly items-center flex-col  bg-neutral-900/50 backdrop-blur-sm border-2 shadow-xl border-white/10">
           <h2 className="text-[50px] font-bold font-serif">URL Shortner</h2>
           <input
             value={url}
@@ -47,7 +47,7 @@ export default function Main() {
           {shortURL && (
             <div className="w-[90%] h-15 border-2 border-black rounded-2xl p-5 flex justify-between items-center">
               <a
-                href={`http://localhost:3000/get/${shortURL}`}
+                href={`https://urlshort0.netlify.app/get/${shortURL}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >{`http://localhost:3000/get/${shortURL}`}</a>
