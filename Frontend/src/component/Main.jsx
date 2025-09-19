@@ -8,7 +8,7 @@ export default function Main() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/create/shorten", {
+      const res = await fetch("https://server-production-385f.up.railway.app/create/shorten", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -47,15 +47,15 @@ export default function Main() {
           {shortURL && (
             <div className="w-[90%] h-15 border-2 border-black rounded-2xl p-5 flex justify-between items-center">
               <a
-                href={`https://urlshort0.netlify.app/get/${shortURL}`}
+                href={`https://server-production-385f.up.railway.app/get/${shortURL}`}
                 target="_blank"
                 rel="noopener noreferrer"
-              >{`http://localhost:3000/get/${shortURL}`}</a>
+              >{`https://server-production-385f.up.railway.app/get/${shortURL}`}</a>
               <button
               type="button" 
               className="border-2 border-black cursor-pointer"
                 onClick={() =>{
-                  navigator.clipboard.writeText(`http://localhost:3000/get/${shortURL}`);
+                  navigator.clipboard.writeText(`https://server-production-385f.up.railway.app/get/${shortURL}`);
                   setCopy(false);
                 }
                 }
