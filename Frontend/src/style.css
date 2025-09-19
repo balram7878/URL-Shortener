@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 body {
   @apply bg-[url("./assets/image4.jpg")];

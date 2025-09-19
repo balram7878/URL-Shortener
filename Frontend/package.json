@@ -5,10 +5,10 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "scripts": {
-    "start": "npx parcel index.html",
-    "build": "npx parcel build index.html"
-  },
+ "scripts": {
+  "start": "parcel src/index.html --open",
+  "build": "parcel build src/index.html --dist-dir dist"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "es-toolkit": "^1.39.10",
