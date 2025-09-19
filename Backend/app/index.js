@@ -7,7 +7,7 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({origin:"https://urlshort0.netlify.app/",credentials:true}));
+app.use(cors({origin:"https://urlshort0.netlify.app",credentials:true}));
 
 app.use("/create", routerPost);
 app.use("/get",routerGet);
